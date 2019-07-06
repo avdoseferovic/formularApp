@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Avdos Form Application</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/util.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+						   integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+						   crossorigin="anonymous">
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+		<div style="display: inline-block">
+				<span onclick="handleAdmin()" class="navbutton">Administration</span>
+				<span onclick="loadFormular()" class="navbutton">Formular</spaa>
+		</div>
+			<form id="adminForm">
+			<div class="formContainer">
+				<span class="loadInput">
+						Forumular name: <input type="text" class="text" onChange="handleSearch(this)">
+						<a href="#" class="button loadButton" onClick="handleLoad()">Search</a>
+				</span>
+			<span id="spanAfter0" class="contact100-form-title">
+				</span>
+				<span id="field">
+					<div id="div0">
+							<span id="staticElement">Element</span>
+							<input id="staticField" type="text" class="text" name="staticId" value="Label 1" onchange="handleName(this)"></input>
+							<span class="radioContainer" id="radioContainer">
+									<select name="staticTypeId" id="firstSelect" onChange="handleSelect(this)">
+										<option value="text">Textbox</option>
+										<option value="checkbox">Checkbox</option>
+										<option value="radio">Radio buttons</option>
+									</select>
+							</span>
+							<select name="staticMandId" id="secondSelect" onChange="handleMandSelect(this)">
+							  <option value="none">None</option>
+							  <option value="mandatory">Mandatory</option>
+							  <option value="numeric">Numeric</option>
+							</select>
+							</span>
+							<a href="#" class="addElement" onClick="handleClick()"><i class="fas fa-plus-circle"></i></a>
+
+					</div>
+			</div>
+				
+			</form>
+			<button class="button saveButton" onClick="handleSave()">Save</button>
+		</div>
+	</div>
+
+
+	<script src="js/main.js"></script>
+
+
+</body>
+</html>

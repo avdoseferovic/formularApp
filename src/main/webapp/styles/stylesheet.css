@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.container {
+	width: 100%;
+	border: 1px solid black;
+}
+
+.text{
+  height: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 9px;
+  background-color: #f7f7f7; 
+}
